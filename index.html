@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DjurQuizAlaNajkel</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+
+      <div id="QR">
+        <h1 style="text-decoration: underline; margin-bottom: 0">Quiz:</h1>
+        <h1 style="margin-top: 0">
+          Hur mycket kan <br />
+          du om djur?
+        </h1>
+        <input
+          type="button"
+          id="SQ"
+          value="Starta Quiz!"
+          onclick="NyRuta('QR','FR1')"
+        />
+      </div>
+
+      <div id="FR1">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: 1/25</h3>
+            <h2>
+              Vilket djur är Europas största <br />
+              smittbärare av rabies?
+            </h2>
+          </div>
+          <div class="midPart">
+            <img id="BF1" src="rabieshund.jpg" />
+            <input
+              type="button"
+              id="Svar1"
+              value="Råttan"
+              onclick="RättSvar('1', 1)"
+            />
+            <input
+              type="button"
+              id="SvarR1"
+              value="Räven"
+              onclick="RättSvar('R1', 1)"
+            />
+            <input
+              type="button"
+              id="Svar2"
+              value="Katten"
+              onclick="RättSvar('2', 1)"
+            />
+            <input
+              type="button"
+              id="Svar3"
+              value="Fladdermusen"
+              onclick="RättSvar('3', 1)"
+            />
+          </div>
+
+          <div class="K1">
+            <input
+              type="button"
+              id="Nästa"
+              value="Nästa >>"
+              onclick="NyRuta('FR1','FR2')"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="FR2">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: 2/25</h3>
+            <h2>När på året parar sig älgar?</h2>
+          </div>
+          <div class="midPart">
+            <img id="BF2" src="ÄlgSamlag.jpg" />
+            <input
+              type="button"
+              id="Svar4"
+              value="Våren"
+              onclick="RättSvar('4', 2)"
+            />
+            <input
+              type="button"
+              id="Svar4"
+              value="Sommaren"
+              onclick="RättSvar('5', 2)"
+            />
+            <input
+              type="button"
+              id="SvarR2"
+              value="Hösten"
+              onclick="RättSvar('R2', 2)"
+            />
+            <input
+              type="button"
+              id="Svar6"
+              value="Vinter"
+              onclick="RättSvar('6', 2)"
+            />
+          </div>
+
+          <div class="buttons">
+            <input
+              type="button"
+              id="Tillbaka"
+              value="<< Tillbaka"
+              onclick="NyRuta('FR2','FR1')"
+            />
+            <input
+              type="button"
+              id="Nästa"
+              value="Nästa >>"
+              onclick="NyRuta('FR2','FR3')"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="FR3">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: 3/25</h3>
+            <h2>
+              Hur ofta byter en älgtjur horn?
+            </h2>
+          </div>
+          <div class="midPart">
+            <img id="BF3" src="ÄlgTjur.jpg" />
+            <input
+              type="button"
+              id="Svar7"
+              value="Varje månad"
+              onclick="RättSvar('7', 3)"
+            />
+            <input
+              type="button"
+              id="Svar8"
+              value="varje 6 månader"
+              onclick="RättSvar('8', 3)"
+            />
+            <input
+              type="button"
+              id="SvarR3"
+              value="varje år"
+              onclick="RättSvar('R3', 3)"
+            />
+            <input
+              type="button"
+              id="Svar9"
+              value="Varje fem år"
+              onclick="RättSvar('9', 3)"
+            />
+          </div>
+
+          <div class="buttons">
+            <input
+              type="button"
+              id="Tillbaka"
+              value="<< Tillbaka"
+              onclick="NyRuta('FR3','FR2')"
+            />
+            <input
+              type="button"
+              id="Nästa"
+              value="Nästa >>"
+              onclick="NyRuta('FR3','FR4')"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="FR4">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: 4/25</h3>
+            <h2>
+                Vilket av djuren tuggar i sig hallucinations-framkallande rötter för att bli hög?
+            </h2>
+          </div>
+          <div class="midPart">
+            <img id="BF4" src="HippieKatt.jpg" />
+            <input
+              type="button"
+              id="Svar10"
+              value="Apan"
+              onclick="RättSvar('10', 4)"
+            />
+            <input
+              type="button"
+              id="Svar11"
+              value="Giraffen"
+              onclick="RättSvar('11', 4)"
+            />
+            <input
+              type="button"
+              id="SvarR4"
+              value="Jaguaren"
+              onclick="RättSvar('R4', 4)"
+            />
+            <input
+              type="button"
+              id="Svar12"
+              value="Surikaten"
+              onclick="RättSvar('12', 4)"
+            />
+          </div>
+
+          <div class="buttons">
+            <input
+              type="button"
+              id="Tillbaka4"
+              value="<< Tillbaka"
+              onclick="NyRuta('FR4','FR3')"
+            />
+            <input
+              type="button"
+              id="Nästa4"
+              value="Nästa >>"
+              onclick="NyRuta('FR4','FR5')">
+        </div>
+      </div>
+    </div>
+
+      <div id="FR5">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: 5/25</h3>
+            <h2>
+                Varför stirrar den här apan så mycket?
+            </h2>
+          </div>
+          <div class="midPart">
+            <img id="BF5" src="Apa-Kokablad.jpg" />
+            <input
+              type="button"
+              id="Svar13"
+              value="Den är rädd för fotografen"
+              onclick="RättSvar('13', 5)"
+            />
+            <input
+              type="button"
+              id="SvarR5"
+              value="Den är trippar på kokablad"
+              onclick="RättSvar('R5', 5)"
+            />
+            <input
+              type="button"
+              id="Svar14"
+              value="Den har glömt hur man klättrar ner"
+              onclick="RättSvar('14', 5)"
+            />
+            <input
+              type="button"
+              id="Svar15"
+              value="Den sover med öppna ögon"
+              onclick="RättSvar('15', 5)"
+            />
+          </div>
+
+          <div class="buttons">
+            <input
+              type="button"
+              id="Tillbaka"
+              value="<< Tillbaka"
+              onclick="NyRuta('FR5','FR4')"
+            />
+            <input
+              type="button"
+              id="Nästa"
+              value="Nästa >>"
+              onclick="NyRuta('FR5','FR6')">
+        </div>
+     </div>
+   </div>
+
+   <div id="FR6">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 6/25</h3>
+        <h2>
+            Vilket djur har en spiralformad penis?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF6" src="Djur2.jpg" />
+        <input
+          type="button"
+          id="Svar16"
+          value="Tvättbjörnen"
+          onclick="RättSvar('16', 6)"
+        />
+        <input
+          type="button"
+          id="Svar17"
+          value="Ekorren"
+          onclick="RättSvar('17', 6)"
+        />
+        <input
+          type="button"
+          id="Svar18"
+          value="Flamingon"
+          onclick="RättSvar('18', 6)"
+        />
+        <input
+          type="button"
+          id="SvarR6"
+          value="Anden"
+          onclick="RättSvar('R6', 6)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR6','FR5')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR6','FR7')">
+    </div>
+ </div>
+</div>
+
+<div id="FR7">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 7/25</h3>
+        <h2>
+            Hur många hjärtan har en bläckfisk?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF7" src="Bläckfisk.jpg" />
+        <input
+          type="button"
+          id="Svar19"
+          value="1"
+          onclick="RättSvar('19', 7)"
+        />
+        <input
+          type="button"
+          id="Svar20"
+          value="2"
+          onclick="RättSvar('20', 7)"
+        />
+        <input
+          type="button"
+          id="SvarR7"
+          value="3"
+          onclick="RättSvar('R7', 7)"
+        />
+        <input
+          type="button"
+          id="Svar21"
+          value="4"
+          onclick="RättSvar('21', 7)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR7','FR6')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR7','FR8')">
+    </div>
+ </div>
+</div>
+
+<div id="FR8">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 8/25</h3>
+        <h2>
+            Hur många ränder har vanligtvis en tiger?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF8" src="Tiger.jpg" />
+        <input
+          type="button"
+          id="SvarR8"
+          value="10-15st"
+          onclick="RättSvar('R8', 8)"
+        />
+        <input
+          type="button"
+          id="Svar22"
+          value="20-40st"
+          onclick="RättSvar('22', 8)"
+        />
+        <input
+          type="button"
+          id="Svar23"
+          value="45-60st"
+          onclick="RättSvar('23', 8)"
+        />
+        <input
+          type="button"
+          id="Svar24"
+          value="Varje tiger har olika många ränder"
+          onclick="RättSvar('24', 8)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR8','FR7')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR8','FR9')">
+    </div>
+ </div>
+</div>
+
+<div id="FR9">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 9/25</h3>
+        <h2>
+            Vad heter lejonet som är med i filmen Narnia?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF9" src="Aslan.jpg" />
+        <input
+          type="button"
+          id="Svar25"
+          value="Mufasa"
+          onclick="RättSvar('25', 9)"
+        />
+        <input
+          type="button"
+          id="Svar26"
+          value="Legolas"
+          onclick="RättSvar('26', 9)"
+        />
+        <input
+          type="button"
+          id="SvarR9"
+          value="Aslan"
+          onclick="RättSvar('R9', 9)"
+        />
+        <input
+          type="button"
+          id="Svar27"
+          value="Anton"
+          onclick="RättSvar('27', 9)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR9','FR8')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR9','FR10')">
+    </div>
+ </div>
+</div>
+
+<div id="FR10">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 10/25</h3>
+        <h2>
+            Hur lång brukar lejonens mank bli?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF9" src="Lejon.jpg" />
+        <input
+          type="button"
+          id="Svar28"
+          value="50 - 65cm"
+          onclick="RättSvar('28', 10)"
+        />
+        <input
+          type="button"
+          id="Svar29"
+          value="70 - 85cm"
+          onclick="RättSvar('29', 10)"
+        />
+        <input
+          type="button"
+          id="Svar30"
+          value="90 - 105cm"
+          onclick="RättSvar('30', 10)"
+        />
+        <input
+          type="button"
+          id="SvarR10"
+          value="110 - 125cm"
+          onclick="RättSvar('R10', 10)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR10','FR9')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR10','FR11')">
+    </div>
+ </div>
+</div>
+
+<div id="FR11">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 11/25</h3>
+        <h2>
+            Vilken föda är vanligast för leopardgeckos?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF11" src="LeopardGecko.png" />
+        <input
+          type="button"
+          id="SvarR11"
+          value="Kackerlackor"
+          onclick="RättSvar('R11', 11)"
+        />
+        <input
+          type="button"
+          id="Svar31"
+          value="Skorpioner"
+          onclick="RättSvar('31', 11)"
+        />
+        <input
+          type="button"
+          id="Svar32"
+          value="Termiter"
+          onclick="RättSvar('32', 11)"
+        />
+        <input
+          type="button"
+          id="Svar33"
+          value="Morötter"
+          onclick="RättSvar('33', 11)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR11','FR10')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR11','FR12')">
+    </div>
+ </div>
+</div>
+
+<div id="FR12">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 12/25</h3>
+        <h2>
+            Vart hamnar födan som leopardgeckon får i sig?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF12" src="LeopardGeckoMat.png" />
+        <input
+          type="button"
+          id="Svar34"
+          value="Magen"
+          onclick="RättSvar('34', 12)"
+        />
+        <input
+          type="button"
+          id="Svar35"
+          value="Halsen"
+          onclick="RättSvar('35', 12)"
+        />
+        <input
+          type="button"
+          id="Svar36"
+          value="Ben & Fötter"
+          onclick="RättSvar('36', 12)"
+        />
+        <input
+          type="button"
+          id="SvarR12"
+          value="Svansen"
+          onclick="RättSvar('R12', 12)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR12','FR11')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR12','FR13')">
+    </div>
+ </div>
+</div>
+
+<div id="FR13">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 13/25</h3>
+        <h2>
+            Hur gammalt kan ett vildsvin bli?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF13" src="Vildsvin.jpg" />
+        <input
+          type="button"
+          id="Svar37"
+          value="5 år"
+          onclick="RättSvar('37', 13)"
+        />
+        <input
+          type="button"
+          id="Svar38"
+          value="15 år"
+          onclick="RättSvar('38', 13)"
+        />
+        <input
+          type="button"
+          id="SvarR13"
+          value="30 år"
+          onclick="RättSvar('R13', 13)"
+        />
+        <input
+          type="button"
+          id="Svar39"
+          value="45 år"
+          onclick="RättSvar('39', 13)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR13','FR12')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR13','FR14')">
+    </div>
+ </div>
+</div>
+
+<div id="FR14">
+    <div class="questionContainer">
+      <div class="topPart">
+        <h3>Fråga: 14/25</h3>
+        <h2>
+            Hur länge lever en trollslända?
+        </h2>
+      </div>
+      <div class="midPart">
+        <img id="BF14" src="Trollslända.jpg" />
+        <input
+          type="button"
+          id="SvarR14"
+          value="24 Timmar"
+          onclick="RättSvar('R14', 14)"
+        />
+        <input
+          type="button"
+          id="Svar40"
+          value="2 Dagar"
+          onclick="RättSvar('40', 14)"
+        />
+        <input
+          type="button"
+          id="Svar41"
+          value="5 Dagar"
+          onclick="RättSvar('41', 14)"
+        />
+        <input
+          type="button"
+          id="Svar42"
+          value="1 Vecka"
+          onclick="RättSvar('42', 14)"
+        />
+      </div>
+
+      <div class="buttons">
+        <input
+          type="button"
+          id="Tillbaka"
+          value="<< Tillbaka"
+          onclick="NyRuta('FR14','FR13')"
+        />
+        <input
+          type="button"
+          id="Nästa"
+          value="Nästa >>"
+          onclick="NyRuta('FR14','FR15')">
+    </div>
+  </div>
+</div>
+
+<div id="FR15">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 15/25</h3>
+      <h2>
+        Hur små kan grodor vara som minst?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF15" src="FyraGroda.jpg" />
+      <input
+        type="button"
+        id="SvarR15"
+        value="1 cm"
+        onclick="RättSvar('R15', 15)"
+      />
+      <input
+        type="button"
+        id="Svar43"
+        value="3 cm"
+        onclick="RättSvar('43', 15)"
+      />
+      <input
+        type="button"
+        id="Svar44"
+        value="5 cm"
+        onclick="RättSvar('44', 15)"
+      />
+      <input
+        type="button"
+        id="Svar45"
+        value="7 cm"
+        onclick="RättSvar('45', 15)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR15','FR14')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR15','FR16')">
+  </div>
+</div>
+</div>
+
+<div id="FR16">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 16/25</h3>
+      <h2>
+        Hur många ägg lägger en groda per gång?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF16" src="Groda.jpg" />
+      <input
+        type="button"
+        id="Svar46"
+        value="100-500"
+        onclick="RättSvar('46', 16)"
+      />
+      <input
+        type="button"
+        id="Svar47"
+        value="500-1000st"
+        onclick="RättSvar('47', 16)"
+      />
+      <input
+        type="button"
+        id="SvarR16"
+        value="1000-3000st"
+        onclick="RättSvar('R16', 16)"
+      />
+      <input
+        type="button"
+        id="Svar48"
+        value="3000-5000st"
+        onclick="RättSvar('48', 16)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR16','FR15')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR16','FR17')">
+  </div>
+</div>
+</div>
+
+<div id="FR17">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 17/25</h3>
+      <h2>
+        Hur mycket väger en surikat?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF17" src="Surikat.png" />
+      <input
+        type="button"
+        id="Svar49"
+        value="0.3-0.6kg"
+        onclick="RättSvar('49', 17)"
+      />
+      <input
+        type="button"
+        id="SvarR17"
+        value="0.7-0.9kg"
+        onclick="RättSvar('R17', 17)"
+      />
+      <input
+        type="button"
+        id="Svar50"
+        value="1-1.5kg"
+        onclick="RättSvar('50', 17)"
+      />
+      <input
+        type="button"
+        id="Svar51"
+        value="2-3kg"
+        onclick="RättSvar('51', 17)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR17','FR16')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR17','FR18')">
+  </div>
+</div>
+</div>
+
+<div id="FR18">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 18/25</h3>
+      <h2>
+        Pingviner kan inte flyga. Varför har de vingar?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF18" src="Pingviner.png" />
+      <input
+        type="button"
+        id="Svar52"
+        value="För att putta och få mer fart medans de glider på isen"
+        onclick="RättSvar('52', 18)"
+      />
+      <input
+        type="button"
+        id="Svar53"
+        value="För att kunna kramas"
+        onclick="RättSvar('53', 18)"
+      />
+      <input
+        type="button"
+        id="SvarR18"
+        value="För att kunna simma snabbare"
+        onclick="RättSvar('R18', 18)"
+      />
+      <input
+        type="button"
+        id="Svar54"
+        value="För att kunna värma sina barn"
+        onclick="RättSvar('54', 18)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR18','FR17')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR18','FR19')">
+  </div>
+</div>
+</div>
+
+<div id="FR19">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 19/25</h3>
+      <h2>
+        Varför kan getter klättra i träd?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF19" src="Getter.png" />
+      <input
+        type="button"
+        id="Svar55"
+        value="För att inte bli uppätna"
+        onclick="RättSvar('55', 19)"
+      />
+      <input
+        type="button"
+        id="Svar56"
+        value="För att kunna få bra utsikt"
+        onclick="RättSvar('56', 19)"
+      />
+      <input
+        type="button"
+        id="SvarR19"
+        value="För att kunna äta trädets blad och frukter"
+        onclick="RättSvar('R19', 19)"
+      />
+      <input
+        type="button"
+        id="Svar57"
+        value="För att föda barn på en säker plats"
+        onclick="RättSvar('57', 19)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR19','FR18')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR19','FR20')">
+  </div>
+</div>
+</div>
+
+<div id="FR20">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 20/25</h3>
+      <h2>
+        Hur länge kan en delfin hålla andan under vatten?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF20" src="Delfiner.png" />
+      <input
+        type="button"
+        id="Svar58"
+        value="5 Min"
+        onclick="RättSvar('58', 20)"
+      />
+      <input
+        type="button"
+        id="SvarR20"
+        value="10 Min"
+        onclick="RättSvar('R20', 20)"
+      />
+      <input
+        type="button"
+        id="Svar59"
+        value="15 Min"
+        onclick="RättSvar('59', 20)"
+      />
+      <input
+        type="button"
+        id="Svar60"
+        value="20 Min"
+        onclick="RättSvar('60', 20)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR20','FR19')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR20','FR21')">
+  </div>
+</div>
+</div>
+
+<div id="FR21">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 21/25</h3>
+      <h2>
+        Hur snabbt kan en späckhuggare simma?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF21" src="Späckhuggare.png" />
+      <input
+        type="button"
+        id="SvarR21"
+        value="56 Km/h"
+        onclick="RättSvar('R21', 21)"
+      />
+      <input
+        type="button"
+        id="Svar61"
+        value="69 Km/h"
+        onclick="RättSvar('61', 21)"
+      />
+      <input
+        type="button"
+        id="Svar62"
+        value="83 Km/h"
+        onclick="RättSvar('62', 21)"
+      />
+      <input
+        type="button"
+        id="Svar63"
+        value="99 Km/h"
+        onclick="RättSvar('63', 21)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR21','FR20')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR21','FR22')">
+  </div>
+</div>
+</div>
+
+<div id="FR22">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 22/25</h3>
+      <h2>
+        Hur många koarter finns det i Sverige?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF22" src="Kossa.png" />
+      <input
+        type="button"
+        id="Svar64"
+        value="369 st"
+        onclick="RättSvar('64', 22)"
+      />
+      <input
+        type="button"
+        id="Svar65"
+        value="666 st"
+        onclick="RättSvar('65', 22)"
+      />
+      <input
+        type="button"
+        id="Svar66"
+        value="853 st"
+        onclick="RättSvar('66', 22)"
+      />
+      <input
+        type="button"
+        id="SvarR22"
+        value="1224 st"
+        onclick="RättSvar('R22', 22)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR22','FR21')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR22','FR23')">
+  </div>
+</div>
+</div>
+
+<div id="FR23">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 23/25</h3>
+      <h2>
+        Hur lång brukar en hangiraffs hals bli??
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF23" src="giraff.png" />
+      <input
+        type="button"
+        id="Svar67"
+        value="3.3 Meter"
+        onclick="RättSvar('67', 23)"
+      />
+      <input
+        type="button"
+        id="Svar68"
+        value="4.9 Meter"
+        onclick="RättSvar('68', 23)"
+      />
+      <input
+        type="button"
+        id="SvarR23"
+        value="5.3 Meter"
+        onclick="RättSvar('R23', 23)"
+      />
+      <input
+        type="button"
+        id="Svar69"
+        value="6.9 Meter"
+        onclick="RättSvar('69', 23)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR23','FR22')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR23','FR24')">
+  </div>
+</div>
+</div>
+
+<div id="FR24">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 24/25</h3>
+      <h2>
+        Vilken kroppsdel visar vilket humör zebran är på?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF24" src="Zebra.png" />
+      <input
+        type="button"
+        id="SvarR24"
+        value="Öronen"
+        onclick="RättSvar('R24', 24)"
+      />
+      <input
+        type="button"
+        id="Svar70"
+        value="Benen"
+        onclick="RättSvar('70', 24)"
+      />
+      <input
+        type="button"
+        id="Svar71"
+        value="Svansen"
+        onclick="RättSvar('71', 24)"
+      />
+      <input
+        type="button"
+        id="Svar72"
+        value="Munnen"
+        onclick="RättSvar('72', 24)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR24','FR23')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR24','FR25')">
+  </div>
+</div>
+</div>
+
+<div id="FR25">
+  <div class="questionContainer">
+    <div class="topPart">
+      <h3>Fråga: 25/25</h3>
+      <h2>
+        Hur mycket väger en flodhäst som mest?
+      </h2>
+    </div>
+    <div class="midPart">
+      <img id="BF25" src="Hippopotamo.png" />
+      <input
+        type="button"
+        id="Svar73"
+        value="1100 Kg"
+        onclick="RättSvar('73', 25)"
+      />
+      <input
+        type="button"
+        id="Svar74"
+        value="1500 Kg"
+        onclick="RättSvar('74', 25)"
+      />
+      <input
+        type="button"
+        id="SvarR25"
+        value="1800 Kg"
+        onclick="RättSvar('R25', 25)"
+      />
+      <input
+        type="button"
+        id="Svar75"
+        value="2000 Kg"
+        onclick="RättSvar('75', 25)"
+      />
+    </div>
+
+    <div class="buttons">
+      <input
+        type="button"
+        id="Tillbaka"
+        value="<< Tillbaka"
+        onclick="NyRuta('FR25','FR24')"
+      />
+      <input
+        type="button"
+        id="Nästa"
+        value="Nästa >>"
+        onclick="NyRuta('FR25','QR2')">
+  </div>
+</div>
+</div>
+
+
+  <div id="QR2">
+     <h4>
+       Du fick:
+     </h4>
+     <h5 id="pointsShower" >
+     </h5>
+    <input
+     type="Button"
+     id="SpelaIgen"
+     value="Spela Igen!"
+     onclick="LaddaOm()">
+   
+  </div>
+</div>
+
+    </form>
+  </body>
+</html>
+
+<!-- 
+          <div id="FR">
+        <div class="questionContainer">
+          <div class="topPart">
+            <h3>Fråga: /22</h3>
+            <h2>
+
+            </h2>
+          </div>
+          <div class="midPart">
+            <img id="BF" src="" />
+            <input
+              type="button"
+              id="Svar"
+              value=""
+              onclick="RättSvar('', )"
+            />
+            <input
+              type="button"
+              id="Svar"
+              value=""
+              onclick="RättSvar('', )"
+            />
+            <input
+              type="button"
+              id="Svar"
+              value=""
+              onclick="RättSvar('', )"
+            />
+            <input
+              type="button"
+              id="Svar"
+              value=""
+              onclick="RättSvar('', )"
+            />
+          </div>
+
+          <div class="buttons">
+            <input
+              type="button"
+              id="Tillbaka"
+              value="<< Tillbaka"
+              onclick="NyRuta('FR','FR')"
+            />
+            <input
+              type="button"
+              id="Nästa"
+              value="Nästa >>"
+              onclick="NyRuta('FR','FR')">
+        </div>
+     </div>
+    </div>
+ -->
